@@ -1,0 +1,8 @@
+# script-doctor-mcp 运行依赖
+#
+# 只需要 mcp 官方 SDK 一个包：
+#   - 模型调用使用标准库 urllib
+#   - .env 读取使用内置的极简解析器
+#   - json / re / dataclasses 均为标准库
+# mcp 会自动带上 httpx、anyio、pydantic 等它自己的依赖。
+mcp>=1.2.0
